@@ -25,7 +25,7 @@ function renderTasks() {
   }
 
 
-  // Отрисовка функций
+  // Отрисовка карточек
   for (let i = 0; i < tasks_to_show.length; i++) {
     const RT_task_card = document.createElement('article');
     RT_task_card.className = 'task_card';

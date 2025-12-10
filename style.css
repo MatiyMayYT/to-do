@@ -35,7 +35,7 @@ nav{
   padding: 6%;
   border-radius: 10%;
   height: 7rem;
-  overflow: scroll;
+  overflow: hidden;
   /* box-shadow: 0rem 0.2rem 1rem 0.02rem rgba(247, 244, 244, 0.453); */
 }
 
