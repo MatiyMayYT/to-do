@@ -1,0 +1,102 @@
+body{
+  background-color: rgb(40, 35, 72);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+nav{
+  background-color: #89ea39;
+}
+
+.tabs{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.tabs>li{
+  margin: 2% auto;
+}
+
+.tabs>li>a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+
+/* ОСНОВНАЯ СЕКЦИЯ */
+/* КАРТОЧКИ */
+.task_card{
+  background: #bff1c1;
+  margin-bottom: 10%;
+  padding: 6%;
+  border-radius: 10%;
+  height: 7rem;
+  overflow: scroll;
+  /* box-shadow: 0rem 0.2rem 1rem 0.02rem rgba(247, 244, 244, 0.453); */
+}
+
+.task_card h3{
+  font-size: 1rem;
+  margin: 1% auto;
+}
+
+.task_card p{
+  font-size: 0.9rem;
+}
+
+.task_card small{
+  font-size: 0.7rem;
+}
+
+  /* чекбокс */
+  .task_card input{
+    transform: scale(5, 5);
+    margin: 2rem;
+  }
+  .task_card input:hover{
+    cursor: pointer;
+  }
+
+  /* крестик для закрытия */
+  .delete_button{
+    position: fixed;
+    bottom: 1rem;
+  }
+
+  .delete_button:hover{
+    cursor: pointer;
+  }
+
+.card_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .task_card:hover{
+  background: #bff1c1ab;
+} */
+
+/* КНОПКА ДОБАВЛЕНИЯ */
+.newTaskButton{
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  background: #98dce9;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+
+/* СЕТКА */
+.tasks_grid{
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: center;
+  gap: 2%;
+}

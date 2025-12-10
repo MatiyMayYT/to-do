@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo-list</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="tabs">
+        <li><a href="" onclick="incoming_tab_filter(event)">Входящие</a></li>
+        <li><a href="" onclick="today_tab_filter(event)">Сегодня</a></li>
+        <li><a href="" onclick="ended_tab_filter(event)">Завершенные</a></li>
+        <li><a href="" onclick="all_tab_filter(event)">ВСЕ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tasks_grid" id="tasks_space">
+      <!-- Сюда будут добавляться задачи -->
+      <!-- <article class="task_card">
+        <h3 id="firstCardName">Название</h3>
+        <div class="card_content">
+          <div class="card_description_date">
+            <p>Описание</p>
+            <small>Дата</small>
+          </div>
+          <input type="checkbox"></input>
+        </div>
+        <button class="delete_button">x</button>
+      </article> -->
+    </div>
+    <button onclick="newTask()" class="newTaskButton">+</button>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
