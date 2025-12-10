@@ -29,6 +29,7 @@ nav{
 /* ОСНОВНАЯ СЕКЦИЯ */
 /* КАРТОЧКИ */
 .task_card{
+  position: relative;
   background: #bff1c1;
   margin-bottom: 10%;
   padding: 6%;
@@ -36,6 +37,19 @@ nav{
   height: 7rem;
   overflow: scroll;
   /* box-shadow: 0rem 0.2rem 1rem 0.02rem rgba(247, 244, 244, 0.453); */
+}
+
+.card_description_date{
+  position: relative;
+}
+.card_description_date small{
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;  /* убрал перенос */
+}
+
+.card_description_date p{
+  margin-top: 0.4rem;
 }
 
 .task_card h3{
@@ -62,8 +76,11 @@ nav{
 
   /* крестик для закрытия */
   .delete_button{
-    position: fixed;
-    bottom: 1rem;
+    all:unset;
+    position: absolute;
+    top: 0rem;
+    right: 0.5rem;
+    color: rgb(205, 0, 0);
   }
 
   .delete_button:hover{
@@ -100,3 +117,4 @@ nav{
   justify-content: center;
   gap: 2%;
 }
+
